@@ -1,0 +1,278 @@
+{
+   "Student Services":[
+      {
+         "title":"One Stop @ SAC",
+         "description":"North Spine\nMon - Thurs: 8:30am - 5pm\nFri: 8:30am - 4:45pm\nSat, Sun and PH: Closed\n6790 6823\n6592 3626"
+      },
+      {
+         "title":"Dental Clinic - Fullerton Dental",
+         "description":"University Health Center\nMon - Fri: 9am - 6pm\nMon - Fri: 6pm - 9pm (By appointment only)\nSat: 9am - 1pm\nSun & PH: Closed\n6790 8331\n6592 3626"
+      },
+      {
+         "title":"Fullerton Health",
+         "description":"University Health Center\nMon - Fri: 8.30am - 9pm\nSat: 9am - 12pm\nSun & PH: Closed\n6793 6828"
+      },
+      {
+         "title":"OCBC - NTU Branch",
+         "description":"North Spine Plaza\nMon - Fri: 9am - 4.30pm\n1800-4383333\n6592 3626"
+      },
+      {
+         "title":"Hair Care: Hair Destination",
+         "description":"Hall 2\nMon - Fri: 10am - 8pm\nSat: 10am - 7pm\n6455 1244"
+      },
+      {
+         "title":"Hair Care: K-Cut",
+         "description":"North Spine Plaza\nMon - Sat: 10am - 8pm\n9846 2487"
+      },
+      {
+         "title":"Supermarkets: Prime Supermarket",
+         "description":"North Spine Plaza\nDaily: 8am - 9pm\n6694 2021"
+      },
+      {
+         "title":"Supermarkets: Giant Express",
+         "description":"Hall 2\nDaily: 8am - 12am\n6791 4957"
+      },
+      {
+         "title":"Convenience Stores: 7 - Eleven",
+         "description":"Hall 2\nDaily: 24 hours\n6791 9331"
+      },
+      {
+         "title":"Convenience Stores: 7 - Eleven",
+         "description":"Hall 14\nMon - Fri: 10am - 8pm\nSat, Sun & PH: Closed\n6790 1832"
+      },
+      {
+         "title":"Smart99",
+         "description":"North Hill Residential Area\nMon - Sat: 9am - 9pm\nSun: Closed\n8508 0232"
+      },
+      {
+         "title":"Lifestyle - LadyFirst",
+         "description":"North Spine Plaza\nMon - Fri: 10.30am - 5.30pm\nSat, Sun & PH: Closed\n6809 3232"
+      },
+      {
+         "title":"Lifestyle - New China Optics",
+         "description":"North Spine Plaza\nMon - Fri: 10.30am - 7.30pm\nSat: 10.30am - 3pm\nSun & PH: Closed\n9336 2635"
+      },
+      {
+         "title":"Computer Store - Eight Flags Computer Systems & Supplies",
+         "description":"South Spine (Below LCK LT)\nMon - Fri: 9am - 6pm\nSat: 9.30am - 1pm\nSun & PH: Closed\n6793 5911"
+      },
+      {
+         "title":"Travel - STA Travel",
+         "description":"North Spine Plaza\nMon - Fri: 10am - 7pm\nSat: 10am - 5pm\nSun & PH: Closed\n6837 0584"
+      },
+      {
+         "title":"Postal Services - Singpost Post Box",
+         "description":"North Spine (L2), South Spine (SS3), Hall 8 (Block 44 Bus Stop)\n6790 6823"
+      },
+      {
+         "title":"Postal Services - POP Station",
+         "description":"School of Biological Sciences (Level B1)\nDrop off, collect and pay for your deliveries when you shop online with any Singpost partner retailers.\n6790 6823"
+      }
+   ],
+   "Accomodation/Hall":[
+      {
+         "title":"General Housing Enquiries",
+         "description":"6970 5155"
+      },
+      {
+         "title":"Hall 1",
+         "description":"6790 5161\nhall1go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 2",
+         "description":"6790 5162\nhall2go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 3",
+         "description":"6790 5163\nhall3go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 4",
+         "description":"6790 5164\nhall4go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 5",
+         "description":"6790 5165\nhall5go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 6",
+         "description":"6790 5166\nhall6crespioneer@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 7",
+         "description":"6790 4891\nhall3go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 8",
+         "description":"6790 6320\nhall8go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 9",
+         "description":"6790 6358\nhall9go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 10",
+         "description":"6790 6377\nhall10go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 11",
+         "description":"6790 6432\nhall11go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 12",
+         "description":"6790 4246\nhall12go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 13",
+         "description":"6790 4248\nhall13go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 14",
+         "description":"6790 4370\nhall14go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 15",
+         "description":"6790 4492\nhall15go@ntu.edu.sg"
+      },
+      {
+         "title":"Hall 16",
+         "description":"6316 8736\nhall16go@ntu.edu.sg"
+      },
+      {
+         "title":"Crescent Hall",
+         "description":"6790 5766\nhall6crespioneer@ntu.edu.sg"
+      },
+      {
+         "title":"Pioneer Hall",
+         "description":"6790 5766\nhall6crespioneer@ntu.edu.sg"
+      },
+      {
+         "title":"Binjai Hall",
+         "description":"6514 8995\nnorthhillhalls@ntu.edu.sg"
+      },
+      {
+         "title":"Tanjong Hall",
+         "description":"6514 8099\nnorthhillhalls@ntu.edu.sg"
+      },
+      {
+         "title":"Banyan Hall",
+         "description":"6592 1897\nnorthhillhalls@ntu.edu.sg"
+      },
+      {
+         "title":"Saraca Hall",
+         "description":"6904 7116\nnycreshalls@ntu.edu.sg"
+      },
+      {
+         "title":"Tamarind Hall",
+         "description":"6904 7116\nnycreshalls@ntu.edu.sg"
+      },
+      {
+         "title":"Meranti Hall",
+         "description":"6904 7116\nnycreshalls@ntu.edu.sg"
+      }
+   ],
+   "Academic Services":[
+      {
+         "title":"Matriculation/Change of Programme/LOA/Facilities' Booking",
+         "description":"6592 2451\nmatric@ntu.edu.sg"
+      },
+      {
+         "title":"For enquiries on course registration",
+         "description":"6592 2445\n6592 2446\nregn_course@ntu.edu.sg"
+      },
+      {
+         "title":"For enquiries on Examinations/Transcripts/Medals & Prices/ Degree Certificates",
+         "description":"6592 2447\n6592 2448\nexam@ntu.edu.sg"
+      }
+   ],
+   "Student Billing & Financial Aid":[
+      {
+         "title":"Postgraduate Billings, Scholarships, Tuition Fee Loan",
+         "description":"6790 4616"
+      },
+      {
+         "title":"Undergraduate Billings, GIRO applications & Bursary disbursements",
+         "description":"6790 5060\n6592 2446"
+      },
+      {
+         "title":"Undergraduate CPF, PSEA, Study Loan & OSP Loan and Cash Awards",
+         "description":"6790 4619"
+      },
+      {
+         "title":"Undergraduate Scholarships, Mendaki & Tuition Fee Loan",
+         "description":"6790 5140"
+      },
+      {
+         "title":"SkillsFuture Credit related enquiries",
+         "description":"6908 1460"
+      }
+   ],
+   "Printing & Photocopying":[
+      {
+         "title":"Lee Wee Nam Library",
+         "description":"Mon to Fri: 9am - 8.30pm\nSat: 9am - 5pm\nSun & PH: Closed\n6268 8368"
+      },
+      {
+         "title":"Chinese Library",
+         "description":"Mon to Fri: 9am - 8.30pm\nSat: 9am - 5pm\nSun & PH: Closed\n6262 0849"
+      },
+      {
+         "title":"North Spine Plaza (Opposite One-Stop)",
+         "description":"Mon to Fri: 9am - 8pm\nSat: 9am - 2pm\nSun & PH: Closed\n6793 5980"
+      },
+      {
+         "title":"School of Electrical and Electronic Engineering",
+         "description":"Mon to Fri: 9am - 6pm\nSat, Sun & PH: Closed\n6793 9532"
+      },
+      {
+         "title":"School of Physical and Mathematical Sciences",
+         "description":"Mon to Fri: 9am - 6pm\nSat, Sun & PH: Closed\n6686 4828"
+      },
+      {
+         "title":"NBS - Financial Trading Room 1 (S3-B1c-33)",
+         "description":"Mon to Fri: 8.30am - 6pm\nSat: 8.30am - 1pm\nSun & PH: Closed\n8228 8702"
+      },
+      {
+         "title":"NBS - MBA Graduate Lab 3 (S3-B2-04)",
+         "description":"Mon to Fri: 8.30am - 6pm\nSat: 8.30am - 1pm\nSat, Sun & PH: Closed\n8228 8702"
+      },
+      {
+         "title":"Residence Halls 1-16, Tanjong Hall, Graduate Hall 1 & 2",
+         "description":"Mon to Fri: 9am - 8pm\nSat: 9am - 5.30pm\nSat, Sun & PH: Closed\n8228 8702"
+      }
+   ],
+   "Banking Services":[
+      {
+         "title":"OCBC - NTU Branch",
+         "description":"Mon to Fri: 9am - 4.30pm\nSat: 9am - 11.30pm\nSun: Closed\n1800-4383333\n6592 3626"
+      },
+      {
+         "title":"OCBC ATM - 24 Hours Banking Kiosk",
+         "description":"Block NS3\nNS3-01"
+      },
+      {
+         "title":"OCBC ATM - Koufu (Food Court 2)",
+         "description":"Block SS3\nSS3-B3"
+      },
+      {
+         "title":"OCBC ATM - South Spine",
+         "description":"Block SS3\nSS3-B3"
+      },
+      {
+         "title":"UOB ATM - North Spine",
+         "description":"Block NS3\nNS3-02"
+      },
+      {
+         "title":"DBS/POSB ATM - Koufu (Food Court 2)",
+         "description":"Block SS3\nSS3-B3"
+      },
+      {
+         "title":"DBS/POSB ATM - North Spine",
+         "description":"Block NS3\nNS3-02"
+      },
+      {
+         "title":"DBS/POSB ATM - South Spine",
+         "description":"Block SS3\nSS3-B3"
+      }
+   ]
+}
