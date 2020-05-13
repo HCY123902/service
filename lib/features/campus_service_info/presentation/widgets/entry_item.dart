@@ -6,22 +6,30 @@ import 'package:url_launcher/url_launcher.dart' as UrlLauncher;
 
 class EntryItem extends StatelessWidget {
   final CampusService service;
+  final snackBar = SnackBar(
+    content: Text("text copied"),
+    backgroundColor: Colors.green,
+  );
 
   EntryItem(this.service);
+
+  void copyText(BuildContext context, String string) {
+    Scaffold.of(context).showSnackBar(snackBar);
+    Clipboard.setData(ClipboardData(text: string));
+  }
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return ListTile(
       contentPadding: EdgeInsets.all(10),
-      title: Text(service.title),
+      title: SelectableText(service.title),
       subtitle: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           !service.description.isEmpty
               ? SelectableText(
                   service.description.reduce((a, b) => a + "\n" + b),
-                  showCursor: true,
                 )
               : Container(),
           !service.contactNumber.isEmpty
@@ -36,15 +44,12 @@ class EntryItem extends StatelessWidget {
                           onTap: () {
                             UrlLauncher.launch("tel://${number}");
                           },
-                          showCursor: true,
                           style:
                               TextStyle(color: Theme.of(context).primaryColor),
                         ),
                         RaisedButton(
                           child: Text("copy"),
-                          onPressed: () {
-                            Clipboard.setData(ClipboardData(text: number));
-                          },
+                          onPressed: () => copyText(context, number),
                         )
                       ],
                     );
@@ -60,18 +65,13 @@ class EntryItem extends StatelessWidget {
                       children: <Widget>[
                         SelectableText(
                           address,
-                          onTap: () {
-                            Clipboard.setData(ClipboardData(text: address));
-                          },
-                          showCursor: true,
+                          onTap: () => copyText(context, address),
                           style:
                               TextStyle(color: Theme.of(context).primaryColor),
                         ),
                         RaisedButton(
                           child: Text("copy"),
-                          onPressed: () {
-                            Clipboard.setData(ClipboardData(text: address));
-                          },
+                          onPressed: () => copyText(context, address),
                         ),
                       ],
                     );
@@ -81,6 +81,5 @@ class EntryItem extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }

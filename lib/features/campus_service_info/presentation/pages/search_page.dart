@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:service/features/campus_service_info/presentation/blocs/categories_bloc/categories_event.dart';
 import 'package:service/features/campus_service_info/presentation/blocs/search_service_bloc/bloc.dart';
 import 'package:service/features/campus_service_info/presentation/widgets/entry_item.dart';
-import 'package:service/injection.dart' as inject;
 
 class SearchPage extends StatefulWidget {
   @override
@@ -38,10 +36,20 @@ class _SearchPageState extends State<SearchPage> {
               Navigator.of(context).pop();
             },
           ),
-          title: TextField(
-            controller: textController,
-            onChanged: dispatchSearchEvent,
-            onSubmitted: dispatchSearchEvent,
+          title: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(width: 3, color: Colors.black45,),
+            ),
+            child: TextField(
+              controller: textController,
+              onChanged: dispatchSearchEvent,
+              onSubmitted: dispatchSearchEvent,
+              decoration: InputDecoration(
+                hintText: "Search",
+              ),
+            )
           ),
           actions: <Widget>[
             IconButton(
@@ -59,16 +67,18 @@ class _SearchPageState extends State<SearchPage> {
                 child: CircularProgressIndicator(),
               );
             } else if(state is InitialItemsLoaded) {
-              return ListView(
-                children: state.list.map((service) {
-                  return EntryItem(service);
-                }).toList(),
+              return ListView.builder(
+                itemBuilder: (context, n) {
+                  return EntryItem(state.list[n]);
+                },
+                itemCount: state.list.length,
               );
             } else if(state is ItemsLoaded) {
-              return ListView(
-                children: state.list.map((service) {
-                  return EntryItem(service);
-                }).toList(),
+              return ListView.builder(
+                itemBuilder: (context, n) {
+                  return EntryItem(state.list[n]);
+                },
+                itemCount: state.list.length,
               );
             }
           },

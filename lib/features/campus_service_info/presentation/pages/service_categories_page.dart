@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:service/features/campus_service_info/presentation/blocs/categories_bloc/categories_bloc.dart';
 import 'package:service/features/campus_service_info/presentation/blocs/categories_bloc/categories_event.dart';
 import 'package:service/features/campus_service_info/presentation/blocs/categories_bloc/categories_state.dart';
-import 'package:service/features/campus_service_info/presentation/blocs/search_service_bloc/bloc.dart';
 import 'package:service/features/campus_service_info/presentation/widgets/entry.dart';
 
 class ServiceCategoriesPage extends StatelessWidget {
@@ -24,12 +23,7 @@ class ServiceCategoriesPage extends StatelessWidget {
           onPressed: () {},
         ),
         title: Text("Campus Service Info"),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () => showSearchPage(context),
-          )
-        ],
+        centerTitle: true,
       ),
       body: BlocBuilder<CategoriesBloc, CategoriesState>(
         builder: (context, state) {
