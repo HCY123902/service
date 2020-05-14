@@ -1,16 +1,9 @@
-import 'dart:convert';
-import 'dart:io';
-import 'dart:ui';
-
 import 'package:flutter_test/flutter_test.dart';
-import 'package:dartz/dartz.dart';
-import 'package:mockito/mockito.dart';
 import 'package:service/features/campus_service_info/data/model/service_model.dart';
 import 'package:service/features/campus_service_info/data/repository/repository_implementation.dart';
 import 'package:service/features/campus_service_info/data/sources/local_source.dart';
 import 'package:service/features/campus_service_info/domain/entity/campus_service.dart';
-import 'package:service/features/campus_service_info/domain/usecases/get_service_in_categories.dart';
-import 'package:service/features/campus_service_info/domain/usecases/search_service.dart';
+import 'package:service/features/campus_service_info/domain/usecases/search_service_use_cases.dart';
 
 void main() {
 
@@ -20,8 +13,8 @@ void main() {
             TestWidgetsFlutterBinding.ensureInitialized();
         final localSource = LocalSourceImplementation('assets/test.json');
         final repository = RepositoryImplementation(localSource);
-        final GetServiceInCategories getServiceInCategories = GetServiceInCategories(repository);
-        Map<String, List<CampusService>> categoriesMap = await getServiceInCategories();
+        final SearchServiceUseCases searchServiceUseCases = SearchServiceUseCases(repository);
+        Map<String, List<CampusService>> categoriesMap = await searchServiceUseCases.getServiceInCategories();
 
         final CampusService a = ServiceModel(
             title: "One Stop @ SAC",

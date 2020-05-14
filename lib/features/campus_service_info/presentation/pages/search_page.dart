@@ -20,11 +20,11 @@ class _SearchPageState extends State<SearchPage> {
     // TODO: implement build
     void dispatchClearEvent() {
       textController.clear();
-      BlocProvider.of<SearchBloc>(context).dispatch(ClearTheSearchContent());
+      BlocProvider.of<SearchBloc>(context).add(ClearTheSearchContent());
     }
 
     void dispatchSearchEvent(String searchKey) {
-      BlocProvider.of<SearchBloc>(context).dispatch(SearchForService(searchKey));
+      BlocProvider.of<SearchBloc>(context).add(SearchForService(searchKey));
     }
 
     return Scaffold(
@@ -62,7 +62,7 @@ class _SearchPageState extends State<SearchPage> {
           builder: (context, state) {
             if(state is InitialSearchState) {
               final searchBloc = BlocProvider.of<SearchBloc>(context);
-              searchBloc.dispatch(LoadInitialItems());
+              searchBloc.add(LoadInitialItems());
               return Center(
                 child: CircularProgressIndicator(),
               );
@@ -79,6 +79,10 @@ class _SearchPageState extends State<SearchPage> {
                   return EntryItem(state.list[n]);
                 },
                 itemCount: state.list.length,
+              );
+            } else {
+              return Center(
+                child: CircularProgressIndicator(),
               );
             }
           },

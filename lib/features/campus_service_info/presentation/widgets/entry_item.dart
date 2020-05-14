@@ -9,6 +9,7 @@ class EntryItem extends StatelessWidget {
   final snackBar = SnackBar(
     content: Text("text copied"),
     backgroundColor: Colors.green,
+    duration: Duration(seconds: 1),
   );
 
   EntryItem(this.service);

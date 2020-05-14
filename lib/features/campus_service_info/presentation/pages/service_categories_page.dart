@@ -15,21 +15,15 @@ class ServiceCategoriesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {},
-        ),
         title: Text("Campus Service Info"),
         centerTitle: true,
       ),
       body: BlocBuilder<CategoriesBloc, CategoriesState>(
         builder: (context, state) {
-          if(state is InitialCategoriesState) {
-            final bloc = BlocProvider.of<CategoriesBloc>(context);
-            bloc.dispatch(LoadingCategories());
+          if (state is InitialCategoriesState) {
+            BlocProvider.of<CategoriesBloc>(context).add(LoadingCategories());
             return Center(
               child: CircularProgressIndicator(),
             );

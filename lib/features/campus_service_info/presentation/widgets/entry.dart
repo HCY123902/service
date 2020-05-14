@@ -14,9 +14,9 @@ class Entry extends StatelessWidget {
     // TODO: implement build
     return ExpansionTile(
       title: Text("${title}"),
-      children: (list.map((service) {
+      children: list.map((service) {
         return EntryItem(service);
-      }).toList()),
+      }).toList(),
     );
   }
 }

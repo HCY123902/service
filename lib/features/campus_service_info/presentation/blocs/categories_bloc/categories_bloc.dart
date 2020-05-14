@@ -1,14 +1,15 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:service/features/campus_service_info/domain/entity/campus_service.dart';
-import 'package:service/features/campus_service_info/domain/usecases/get_service_in_categories.dart';
-import 'package:service/features/campus_service_info/presentation/blocs/search_service_bloc/bloc.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:service/features/campus_service_info/domain/usecases/search_service_use_cases.dart';
 import './bloc.dart';
 
 class CategoriesBloc extends Bloc<CategoriesEvent, CategoriesState> {
-  final GetServiceInCategories getServiceInCategories;
+  final SearchServiceUseCases searchServiceUseCases;
 
-  CategoriesBloc(this.getServiceInCategories);
+  CategoriesBloc({@required SearchServiceUseCases searchServiceUseCases})
+  : assert(searchServiceUseCases != null),
+    this.searchServiceUseCases = searchServiceUseCases;
 
   @override
   // TODO: implement initialState
@@ -20,7 +21,7 @@ class CategoriesBloc extends Bloc<CategoriesEvent, CategoriesState> {
   ) async* {
     // TODO: Add Logic
     if(event is LoadingCategories) {
-      final map = await getServiceInCategories();
+      final map = await searchServiceUseCases.getServiceInCategories();
       yield LoadedState(map);
     }
   }

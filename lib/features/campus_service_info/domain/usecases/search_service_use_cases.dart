@@ -1,18 +1,19 @@
-import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:service/features/campus_service_info/domain/entity/campus_service.dart';
 import 'package:service/features/campus_service_info/domain/repository/repository.dart';
 
-class SearchService {
+class SearchServiceUseCases {
   Repository repository;
-  List<CampusService> list;
 
-  SearchService(this.repository);
+  SearchServiceUseCases(this.repository);
 
-  Future<List<CampusService>> call(Param param) async {
-    if(list == null) {
-      this.list = await repository.getAllService();
-    }
+  Future<Map<String, List<CampusService>>> getServiceInCategories() async {
+    Map<String, List<CampusService>> map = await repository.getAllServiceInCategories();
+    return map;
+  }
+
+  Future<List<CampusService>> searchService(Param param) async {
+    List<CampusService> list = await repository.getAllService();
     return list.where((service) {
       return service.title.toLowerCase().contains(param.searchKey.toLowerCase());
     }).toList();

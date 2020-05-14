@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-
         providers: [
           BlocProvider<CategoriesBloc>.value(
             value: inject.sl<CategoriesBloc>(),
@@ -27,7 +26,6 @@ class MyApp extends StatelessWidget {
             value: inject.sl<SearchBloc>(),
           ),
         ],
-
         //builder: (context) => inject.sl<CategoriesBloc>(),
         child: MaterialApp(
           title: 'Campus Service Info',
